@@ -86,7 +86,8 @@ h1{
 
 .form__button{
   display: block;
-  margin-left: auto;
+  /* margin-left: auto; */
+  margin: auto;
   padding: .75rem 2rem;
   outline: none;
   border: 2px solid #0f0;
@@ -122,7 +123,7 @@ h1{
 }
 
 
-.form__button::before{
+.form__button:hover :before{
   content: "";
   position: absolute;
   left: -20px;
@@ -138,7 +139,7 @@ h1{
   transition-delay: 1s, 0.5s, 0s, 0s;
 }
 
-.form__button:hover::before{
+.form__button:hover :before{
   width: 60%;
   height: 100%;
   right: -2px;
@@ -148,7 +149,7 @@ h1{
   
 }
 
-.form__button::after{
+.form__button:hover :after{
   content: '';
   position: absolute;
   right: -20px;
@@ -164,7 +165,7 @@ h1{
   transition-delay: 1s, 0.5s, 0s, 0s;
 }
 
-.form__button:hover::after{
+.form__button:hover :after{
   width: 60%;
   height: 100%;
   left: -2px;
@@ -178,6 +179,12 @@ span.psw{
   color: #fff;
   float: left;
   padding-top: 16px;
+}
+span.newac{
+  color: #fff;
+  float: left;
+  padding-inline-end: 20px;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 300px) {
